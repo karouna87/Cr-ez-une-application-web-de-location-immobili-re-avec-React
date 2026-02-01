@@ -1,10 +1,16 @@
 function Footer() {
     return (
-        <footer>
-            <p>© 2026 - My Kasa App</p>
+        <footer className="footer">
+            <img
+                src="/logo-footer.svg"
+                alt="Kasa"
+                className="footer__logo"
+            />
+            <p className="footer__text">
+                © 2020 Kasa. All rights reserved
+            </p>
         </footer>
     );
 }
 
 export default Footer;
-

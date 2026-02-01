@@ -1,7 +1,16 @@
+import Banner from "../components/Banner";
+import CardsList from "../components/CardsList";
+
 function Home() {
-    return <h1>Accueil</h1>;
+    return (
+        <>
+            <Banner
+                image="/images/banner-home.jpg"
+                text="Chez vous, partout et ailleurs"
+            />
+            <CardsList />
+        </>
+  );
 }
 
 export default Home;
-
-
