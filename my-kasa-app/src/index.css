@@ -1,7 +1,7 @@
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
   font-weight: 400;
+
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -12,6 +12,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.page-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 
 a {
   font-weight: 500;
@@ -27,7 +34,6 @@ body {
   display: flex;
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
 }
 
 h1 {
@@ -70,6 +76,114 @@ button:focus-visible {
 
 
 
+
+
+
+
+
+.collapse {
+  display: flex;
+  flex-direction: column;
+  max-width: 1023px;
+  margin: 0px auto;
+  gap: 20px;
+  bottom: 10px;
+}
+
+.collapse-header {
+  background-color: #ff6060;
+  color: #FFFFFF;
+  padding: 12px 15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.collapse-arrow {
+  width: 16px;
+  transition: transform 0.3s ease;
+}
+
+.collapse-arrow.open {
+  transform: rotate(180deg);
+}
+
+.collapse-content {
+  background-color: #f6f6f6;
+  border-radius: 5px;
+  padding: 0 15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.collapse-content.open {
+  max-height: 200px;
+  padding: 15px;
+  text-align: left;
+}
+
+
+
+
+/* =====================
+   RESPONSIVE
+===================== */
+
+
+@media (max-width: 1024px) {
+
+  .about {
+    padding: 0 20px;
+  }
+
+  .about-banner {
+    height: 180px;
+    border-radius: 20px;
+  }
+
+  .collapse-list {
+    padding: 0;
+    gap: 18px;
+  }
+
+}
+
+
+
+
+@media (max-width: 768px) {
+
+  
+  .collapse {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    gap: 10px;
+
+  }
+
+  .collapse-header {
+    margin: 0;
+  }
+
+  .about {
+    padding: 0;
+  }
+
+  .about-banner {
+    height: 111px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+  }
+
+  .collapse-list {
+    padding: 0;
+    gap: 16px;
+  }
+
+}
 
 
 
