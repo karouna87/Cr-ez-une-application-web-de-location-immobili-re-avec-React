@@ -176,7 +176,7 @@ header nav a:hover {
 }
 
 .card h2 {
-  width: 300px;
+  max-width: 300px;
   height: 52px;
   opacity: 1;
   text-align: left;
@@ -283,7 +283,7 @@ footer {
     left: 16px;
     opacity: 1;
     overflow-wrap: break-word;
-
+    max-width: 210px;
   }
 
   .cards {
@@ -314,3 +314,58 @@ footer {
   }
 }
 
+
+
+
+/* =========================
+   PAGE 404 
+========================= */
+
+.error-page {
+  min-height: calc(100vh - 209px - 100px); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.error-page h1 {
+  font-size: 180px;
+  font-weight: 700;
+  color: #FF6060;
+  margin: 0;
+}
+
+.error-text {
+  font-size: 36px;
+  color: #FF6060;
+}
+
+.error-link {
+  margin-top: 40px;
+  font-size: 18px;
+  text-decoration: underline;
+  color: #000000;
+}
+
+
+
+@media (max-width: 768px) {
+
+  .error-page h1 {
+    font-size: 96px;
+  }
+
+  .error-text {
+    font-size: 18px;
+    overflow-wrap: break-word;
+    max-width: 200px;
+  }
+
+  .error-link {
+    font-size: 14px;
+  }
+}
