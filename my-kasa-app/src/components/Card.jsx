@@ -11,3 +11,5 @@ function Card({ id, title, cover }) {
 
 export default Card;
 
+
+

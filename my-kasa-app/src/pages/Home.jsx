@@ -1,3 +1,4 @@
+import logements from "../data/logements.json";
 import Banner from "../components/Banner";
 import CardsList from "../components/CardsList";
 
@@ -16,3 +17,8 @@ function Home() {
 }
 
 export default Home;
+
+
+
+
+

@@ -1,0 +1,155 @@
+
+/* ==========================
+   PAGE LOGEMENT
+========================== */
+
+.logement-page {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ===== HEADER (titre + host + étoiles) ===== */
+.logement-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+/* ----- Partie gauche ----- */
+.logement-info h1 {
+  color: #FF6060;
+  font-size: 36px;
+  margin-bottom: 5px;
+  overflow-wrap: break-word;
+  max-width: 300px;
+}
+
+.logement-location {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Tags rouges */
+.logement-tags {
+  display: flex;
+  gap: 10px;
+}
+
+.tag {
+  background: #FF6060;
+  color: white;
+  padding: 5px 40px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+/* ----- Partie droite (host + étoiles) ----- */
+.logement-host {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.host-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.host-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+/* Position des étoiles (exactement comme maquette) */
+.logement-rating {
+  color: #FF6060;
+  font-size: 24px;
+}
+
+/* ===== COLLAPSES ===== */
+.logement-collapses {
+  display: flex;
+  gap: 76px;
+  margin-top: 20px;
+}
+
+/* Liste des équipements propre */
+.equipments-list {
+  list-style: none;
+  padding: 0;
+  color: black;
+}
+
+.equipments-list li {
+  margin-bottom: 5px;
+  color: black;
+}
+
+
+
+/* ======================
+   LOGEMENT – MOBILE
+====================== */
+@media (max-width: 768px) {
+
+  .logement-page {
+    padding: 15px;
+  }
+
+  /* ===== TITRE ===== */
+  .logement-info h1 {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  .logement-location {
+    font-size: 14px;
+  }
+
+  /* ===== HEADER ===== */
+  .logement-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* ===== TAGS ===== */
+  .logement-tags {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .tag {
+    font-size: 10px;
+    padding: 4px 8px;
+    border-radius: 8px;
+  }
+
+  /* ===== HOST + ÉTOILES ===== */
+  .logement-host {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .host-avatar {
+    width: 32px;
+    height: 32px;
+  }
+
+  .logement-rating {
+    font-size: 14px;
+  }
+
+  /* ===== COLLAPSES ===== */
+  .logement-collapses {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+}
