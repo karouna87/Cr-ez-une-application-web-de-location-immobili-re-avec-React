@@ -22,8 +22,6 @@
   color: #FF6060;
   font-size: 36px;
   margin-bottom: 5px;
-  overflow-wrap: break-word;
-  max-width: 300px;
 }
 
 .logement-location {
@@ -39,7 +37,7 @@
 
 .tag {
   background: #FF6060;
-  color: white;
+  color: #FFFFFF;
   padding: 5px 40px;
   border-radius: 10px;
   font-size: 14px;
@@ -65,7 +63,7 @@
   border-radius: 50%;
 }
 
-/* Position des étoiles (exactement comme maquette) */
+/* Position des étoiles */
 .logement-rating {
   color: #FF6060;
   font-size: 24px;
@@ -82,12 +80,12 @@
 .equipments-list {
   list-style: none;
   padding: 0;
-  color: black;
+  color: #000000;
 }
 
 .equipments-list li {
   margin-bottom: 5px;
-  color: black;
+  color: #000000;
 }
 
 
@@ -101,23 +99,22 @@
     padding: 15px;
   }
 
-  /* ===== TITRE ===== */
   .logement-info h1 {
     font-size: 18px;
     line-height: 1.3;
+    overflow-wrap: break-word;
+    max-width: 300px;
   }
 
   .logement-location {
     font-size: 14px;
   }
 
-  /* ===== HEADER ===== */
   .logement-header {
     flex-direction: column;
     gap: 15px;
   }
 
-  /* ===== TAGS ===== */
   .logement-tags {
     flex-wrap: wrap;
     gap: 8px;
@@ -129,7 +126,6 @@
     border-radius: 8px;
   }
 
-  /* ===== HOST + ÉTOILES ===== */
   .logement-host {
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -146,7 +142,6 @@
     font-size: 14px;
   }
 
-  /* ===== COLLAPSES ===== */
   .logement-collapses {
     flex-direction: column;
     gap: 15px;

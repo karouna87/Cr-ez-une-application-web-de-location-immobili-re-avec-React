@@ -10,19 +10,16 @@ function Logement() {
   const logement = logements.find((item) => item.id === id);
 
   if (!logement) {
-    return <Navigate to="/404" />;
+    return <Navigate to="/404" replace />;
   }
 
   return (
     <main className="logement-page">
 
-      {/* ===== CARROUSEL ===== */}
       <Slideshow pictures={logement.pictures} />
 
-      {/* ===== TITRE + LOCALISATION + TAGS / HOST + ÉTOILES ===== */}
       <div className="logement-header">
 
-        {/* Partie gauche */}
         <div className="logement-info">
           <h1>{logement.title}</h1>
           <p className="logement-location">{logement.location}</p>
@@ -36,7 +33,6 @@ function Logement() {
           </div>
         </div>
 
-        {/* Partie droite (host + étoiles) */}
         <div className="logement-host">
           <div className="host-info">
             <p>{logement.host.name}</p>
@@ -55,9 +51,7 @@ function Logement() {
 
       </div>
 
-      {/* ===== COLLAPSES ===== */}
       <div className="logement-collapses">
-
         <Collapse title="Description">
           <p>{logement.description}</p>
         </Collapse>
@@ -69,7 +63,6 @@ function Logement() {
             ))}
           </ul>
         </Collapse>
-
       </div>
 
     </main>
