@@ -36,3 +36,13 @@
   color: #FFFFFF;
   font-size: 18px;
 }
+
+
+/* ======================
+   LOGEMENT – MOBILE
+====================== */
+@media (max-width: 768px) {
+  .slideshow-counter {
+    display: none;
+  }
+}
